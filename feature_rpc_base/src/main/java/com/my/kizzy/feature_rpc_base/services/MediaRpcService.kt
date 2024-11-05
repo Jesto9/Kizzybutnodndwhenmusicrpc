@@ -142,7 +142,7 @@ class MediaRpcService : Service() {
                     setState(playingMedia.state)
                     setStartTimestamps(if (enableTimestamps) playingMedia.time?.start else null)
                     setStopTimestamps(if (enableTimestamps) playingMedia.time?.end else null)
-                    setStatus(Prefs[Prefs.CUSTOM_ACTIVITY_STATUS, "dnd"])
+                    setStatus(Prefs[Prefs.CUSTOM_ACTIVITY_STATUS, "online"])
                     setLargeImage(playingMedia.largeImage, playingMedia.largeText)
                     setSmallImage(playingMedia.smallImage, playingMedia.smallText)
                     if (Prefs[Prefs.USE_RPC_BUTTONS, false]) {
